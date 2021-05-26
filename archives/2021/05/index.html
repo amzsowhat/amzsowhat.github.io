@@ -123,11 +123,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
         <a class="title flat-box" target="_self" href='/'>
           
-            <img no-lazy class='logo' src='https://cdn.jsdelivr.net/gh/amzsowhat/image/img/Sprite-0001.png'/>
           
           
-          
-            for FREE
+            阿童的博客
           
         </a>
       
@@ -662,11 +660,7 @@ Qu...
     <br><br>
     
       
-        <div class="aplayer-container">
-          
-
-
-        </div>
+        
       
     
       
@@ -704,11 +698,6 @@ Qu...
       
     
       
-        <div><p>Blog content follows the <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en">Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) License</a></p>
-</div>
-      
-    
-      
         Use
         <a href="https://github.com/volantis-x/hexo-theme-volantis/tree/4.3.1" target="_blank" class="codename">Volantis</a>
         as theme
@@ -716,9 +705,22 @@ Qu...
     
       
         <div class='copyright'>
-        <p><a href="/">Copyright © 2017-2020 XXX</a></p>
+        <p><a href="/">Copyright © 2020-2021  由阿童持续维护</a></p>
 
         </div>
+      
+    
+      
+        
+          <div><br></div>
+        
+      
+    
+      
+        
+          <div><p><a href="/">由阿童持续维护</a></p>
+</div>
+        
       
     
   </footer>
@@ -1502,93 +1504,6 @@ function setSearchService() {
 </script>
 
 
-
-
-  <script>
-const rootElement = document.documentElement;
-const darkModeStorageKey = "user-color-scheme";
-const rootElementDarkModeAttributeName = "data-user-color-scheme";
-
-const setLS = (k, v) => {
-    localStorage.setItem(k, v);
-};
-
-const removeLS = (k) => {
-    localStorage.removeItem(k);
-};
-
-const getLS = (k) => {
-    return localStorage.getItem(k);
-};
-
-const getModeFromCSSMediaQuery = () => {
-  return window.matchMedia("(prefers-color-scheme: dark)").matches
-    ? "dark"
-    : "light";
-};
-
-const resetRootDarkModeAttributeAndLS = () => {
-  rootElement.removeAttribute(rootElementDarkModeAttributeName);
-  removeLS(darkModeStorageKey);
-};
-
-const validColorModeKeys = {
-  dark: true,
-  light: true,
-};
-
-const applyCustomDarkModeSettings = (mode) => {
-  const currentSetting = mode || getLS(darkModeStorageKey);
-
-  if (currentSetting === getModeFromCSSMediaQuery()) {
-    resetRootDarkModeAttributeAndLS();
-  } else if (validColorModeKeys[currentSetting]) {
-    rootElement.setAttribute(rootElementDarkModeAttributeName, currentSetting);
-  } else {
-    resetRootDarkModeAttributeAndLS();
-  }
-};
-
-const invertDarkModeObj = {
-  dark: "light",
-  light: "dark",
-};
-
-/**
- * get target mode
- */
-const toggleCustomDarkMode = () => {
-  let currentSetting = getLS(darkModeStorageKey);
-
-  if (validColorModeKeys[currentSetting]) {
-    currentSetting = invertDarkModeObj[currentSetting];
-  } else if (currentSetting === null) {
-    currentSetting = invertDarkModeObj[getModeFromCSSMediaQuery()];
-  } else {
-    return;
-  }
-  setLS(darkModeStorageKey, currentSetting);
-  return currentSetting;
-};
-
-/**
- * bind click event for toggle button
- */
-var btn=$("#wrapper .toggle-mode-btn,#rightmenu-wrapper .toggle-mode-btn");
-function bindToggleButton() {
-    btn.on('click',(e) => {
-      const mode = toggleCustomDarkMode();
-      applyCustomDarkModeSettings(mode);
-    });
-}
-
-applyCustomDarkModeSettings();
-document.addEventListener("DOMContentLoaded", bindToggleButton);
-volantis.pjax.push(bindToggleButton);
-volantis.pjax.send(()=>{
-	btn.unbind('click');
-},'toggle-mode-btn-unbind');
-</script>
 
 
 
