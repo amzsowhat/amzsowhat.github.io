@@ -369,8 +369,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <div class='top'>
     
     
-      <p class="title">Volantis</p>
+      <p class="title">阿童的博客</p>
     
+    
+      <p class="subtitle">TECH OTAKUS SAVE THE WORLD</p>
     
   </div>
   <div class='bottom'>
@@ -378,46 +380,36 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <div class='list-h'>
         
           
-            <a href="/v4/getting-started/"
+            <a href="/"
               
               
-              id="v4getting-started">
-              <img src='https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f5c3.svg'><p>文档</p>
+              id="home">
+              <p>博客</p>
             </a>
           
-            <a href="/faqs/"
+            <a href="/null"
               
               
-              id="faqs">
-              <img src='https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f516.svg'><p>帮助</p>
+              id="null">
+              <p>项目</p>
             </a>
           
-            <a href="/examples/"
+            <a href="/blog/archives/"
+              
+                rel="nofollow"
               
               
-              id="examples">
-              <img src='https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f396.svg'><p>示例</p>
+              id="blogarchives">
+              <p>归档</p>
             </a>
           
-            <a href="/contributors/"
+            <a href="/null"
+              
+                rel="nofollow"
               
               
-              id="contributors">
-              <img src='https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f389.svg'><p>社区</p>
-            </a>
-          
-            <a href="/archives/"
-              
-              
-              id="archives">
-              <img src='https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f4f0.svg'><p>博客</p>
-            </a>
-          
-            <a target="_blank" rel="noopener" href="https://github.com/volantis-x/hexo-theme-volantis/"
-              
-              
-              id="https:githubcomvolantis-xhexo-theme-volantis">
-              <img src='https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f9ec.svg'><p>源码</p>
+              id="null">
+              <p>关于</p>
             </a>
           
         
@@ -507,7 +499,7 @@ Qu...
     
     
 
-<section class="widget blogger shadow desktop mobile">
+<section class="widget blogger shadow desktop">
   <div class='content'>
     
       
@@ -609,7 +601,7 @@ Qu...
         <div class="webinfo-item">
           <div>最后活动时间：</div>
           
-            <div id="last-update" style="display: none;">Wed May 26 2021 20:21:27 GMT+0800 (GMT+08:00)</div>
+            <div id="last-update" style="display: none;">Wed May 26 2021 20:48:42 GMT+0800 (GMT+08:00)</div>
             <div id="last-update-show">2021-05-26 日</div>
           
         </div>
@@ -1038,10 +1030,6 @@ var loadCSS = function( href, before, media, attributes ){
         
       
         
-          <hr>
-        
-      
-        
           
     <li>
       <a class='vlts-menu fix-cursor-default ' href=https://volantis.js.org/contributors/
@@ -1099,6 +1087,26 @@ var loadCSS = function( href, before, media, attributes ){
           <hr>
         
       
+        
+          <li class='music name'>
+            <p class='nav music-title fix-cursor-default'></p>
+          </li>
+          <li class='music ctrl'>
+            <a class='nav icon-only backward fix-cursor-default' onclick='aplayerBackward()'><i class='fa fa-step-backward fa-fw'></i></a>
+            <a class='nav icon-only toggle fix-cursor-default' onclick='aplayerToggle()'><i class='fa fa-play fa-fw'></i></a>
+            <a class='nav icon-only forward fix-cursor-default' onclick='aplayerForward()'><i class='fa fa-step-forward fa-fw'></i></a>
+          </li>
+          <li class='music volume'>
+            <a class='nav volume'>
+              <div class="aplayer-volume-bar-wrap">
+                <div class="aplayer-volume-bar fix-cursor-pointer">
+                  <div class="aplayer-volume"></div>
+                  <i class='left fa fa-volume-off fa-fw'></i>
+                  <i class='right fa fa-volume-up fa-fw'></i>
+                </div>
+              </div>
+            </a>
+          </li>
         
       
     </ul>
@@ -1204,6 +1212,11 @@ var loadCSS = function( href, before, media, attributes ){
       }
       // 有音乐播放器 see: layout/_third-party/aplayer/script.ejs
       
+      if(volantis.APlayerLoaded){ // APlayer加载完成？
+        // 如果有aplayer，初始化一下
+        checkAPlayer();
+      }
+      
       return false; // 该行代码确保系统自带的右键菜单不会被调出
     }
     function hideMenu() {
@@ -1290,6 +1303,32 @@ var loadCSS = function( href, before, media, attributes ){
 
 
 
+
+
+  <script>
+  let APlayerController = new Object();
+  APlayerController.id = '121968838';  // 设定全局音乐播放ID
+  APlayerController.volume = '0.7';
+  loadCSS("https://cdn.jsdelivr.net/npm/aplayer@1.10/dist/APlayer.min.css", window.volantis.loadcss);
+  // APlayer 需要在  MetingJS 之前加载
+  loadScript("https://cdn.jsdelivr.net/npm/aplayer@1.10/dist/APlayer.min.js")
+  window.volantis.APlayerLoaded=0 // APlayer加载完成状态
+  var checkAPlayer = setInterval(function () {
+    if (!window.APlayer) return // APlayer加载完成？
+	  if ($("#safearea").css("display")!="block") return // 文章内容加载完成？ see: source/css/first.styl
+    clearInterval(checkAPlayer)
+	  if (!window.volantis.APlayerLoaded&&!window.MetingJSElement){ // APlayer只能加载一次
+      window.volantis.APlayerLoaded=1 // APlayer加载完成
+      loadScript("https://cdn.jsdelivr.net/npm/meting@2.0/dist/Meting.min.js") // 加载 MetingJS
+	  }
+  }, 2500) // 按照网速调节差分2.5s
+  // rightmenu see: layout/_partial/rightmenu.ejs
+
+  
+    loadScript("/js/aplayer.js")
+  
+
+</script>
 
 
 
