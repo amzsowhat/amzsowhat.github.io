@@ -387,11 +387,18 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
               <p>博客</p>
             </a>
           
-            <a href="/null"
+            <a href="/categories/"
               
               
-              id="null">
-              <p>项目</p>
+              id="categories">
+              <p>分类</p>
+            </a>
+          
+            <a href="/tags/"
+              
+              
+              id="tags">
+              <p>标签</p>
             </a>
           
             <a href="/blog/archives/"
@@ -403,12 +410,19 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
               <p>归档</p>
             </a>
           
-            <a href="/null"
+            <a href="/friends/"
+              
+              
+              id="friends">
+              <p>友链</p>
+            </a>
+          
+            <a href="/about/"
               
                 rel="nofollow"
               
               
-              id="null">
+              id="about">
               <p>关于</p>
             </a>
           
@@ -450,16 +464,26 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
     <h2 class="article-title" >
-      <a href="/2021/05/08/hello-world/">
-        Hello World
+      <a href="/2021/05/26/Sylenth1%E5%90%88%E6%88%90%E5%99%A8/">
+        May 26, 2021
       </a>
     </h2>
   
   <div class='md'>
     
       
-        Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Qu...
+        Sylenth1合成器一、声音走向​    合成器共包含4个Oscillator（振荡器），Part A/B 各两个。
+​    采用层级结构如下图：
+
+其中，声音输出前的Master Effects居于效果器中央，共有以下
+Distort——琶音
+Phaser——失真
+Chorus——相位
+EQ
+Delay——延音
+Reverb——混响
+Compress——压缩 
+以及一个midi效果器：...
       
     
   </div>
@@ -467,12 +491,12 @@ Qu...
     <div class='meta-v3' line_style='solid'>
       <div>
         
-        <time>2021-05-08</time>
+        <time>2021-05-26</time>
         
       </div>
       
         <div>
-          <a class='readmore' href='/2021/05/08/hello-world/'>
+          <a class='readmore' href='/2021/05/26/Sylenth1%E5%90%88%E6%88%90%E5%99%A8/'>
             Read More
           </a>
         </div>
@@ -601,7 +625,7 @@ Qu...
         <div class="webinfo-item">
           <div>最后活动时间：</div>
           
-            <div id="last-update" style="display: none;">Wed May 26 2021 20:48:42 GMT+0800 (GMT+08:00)</div>
+            <div id="last-update" style="display: none;">Wed May 26 2021 21:28:43 GMT+0800 (GMT+08:00)</div>
             <div id="last-update-show">2021-05-26 日</div>
           
         </div>
@@ -717,8 +741,8 @@ Qu...
         <div class="social-wrapper">
           
             
-              <a href="/atom.xml"
-                class="social fas fa-rss flat-btn"
+              <a href="mailto:amzsowhat@gmail.com"
+                class="social fas fa-envelope flat-btn"
                 target="_blank"
                 rel="external nofollow noopener noreferrer">
                 
@@ -736,7 +760,7 @@ Qu...
           
             
               <a href="https://music.163.com/#/user/home?id=101814811"
-                class="social fas fa-headphones-alt flat-btn"
+                class="social fas fa-music flat-btn"
                 target="_blank"
                 rel="external nofollow noopener noreferrer">
                 
@@ -744,12 +768,6 @@ Qu...
             
           
         </div>
-      
-    
-      
-        Use
-        <a href="https://github.com/volantis-x/hexo-theme-volantis/tree/4.3.1" target="_blank" class="codename">Volantis</a>
-        as theme
       
     
       
