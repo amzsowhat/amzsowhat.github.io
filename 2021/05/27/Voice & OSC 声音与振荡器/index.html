@@ -5,8 +5,6 @@
   <!-- SEO相关 -->
   
     
-      <meta name="robots" content="noindex,follow">
-    
   
   <!-- 渲染优化 -->
   <meta http-equiv='x-dns-prefetch-control' content='on' />
@@ -24,7 +22,7 @@
 
   <!-- 页面元数据 -->
   
-  <title>Archive: 2021 - ヽ(✿ﾟ▽ﾟ)ノHi 欢迎来到阿童的博客</title>
+  <title>ヽ(✿ﾟ▽ﾟ)ノHi 欢迎来到阿童的博客</title>
   
 
   
@@ -357,7 +355,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <div id="l_cover">
   
     
-        <div id="full" class='cover-wrapper  dock' style="display: none;">
+        <div id="full" class='cover-wrapper post dock' style="display: none;">
           
             <div id='cover-backstretch'></div>
           
@@ -439,129 +437,183 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
 
 <div class='l_main'>
-	
-		
-  <section class="post-list">
-    
-      
-        
-          
-        
-          
-        
-      
-    
-    
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow">
+  <article class="article post white-box reveal md shadow article-type-post" id="post" itemscope itemprop="blogPost">
   
-  
-  
-  
-    
-    <h2 class="article-title" >
-      <a href="/2021/05/27/Voice%20&%20OSC%20%E5%A3%B0%E9%9F%B3%E4%B8%8E%E6%8C%AF%E8%8D%A1%E5%99%A8/">
-        May 27, 2021
-      </a>
-    </h2>
-  
-  <div class='md'>
-    
-      
-        Voice &amp; OSC 声音与振荡器OSC在Sylenth1中体现为Part A和Part B两部分，每个Part面板都包含独属的osclllator、AMP ENV、Filter等部分。
-OSC参数发声数Sylenth1是一台Polyphony合成器（多音合成器） 
-左上角的Polyphony数值控制着midi键盘同时按下的键位数
 
-右侧的Voices数代表着最大发声数，分子为实时...
-      
+
+  
+  <div class="article-meta" id="top">
+    
+    
     
   </div>
+
+
   
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time>2021-05-27</time>
-        
-      </div>
+  
+  <h1 id="Voice-amp-OSC-声音与振荡器"><a href="#Voice-amp-OSC-声音与振荡器" class="headerlink" title="Voice &amp; OSC 声音与振荡器"></a>Voice &amp; OSC 声音与振荡器</h1><p>OSC在Sylenth1中体现为Part A和Part B两部分，每个Part面板都包含独属的osclllator、AMP ENV、Filter等部分。</p>
+<h2 id="OSC参数"><a href="#OSC参数" class="headerlink" title="OSC参数"></a>OSC参数</h2><h3 id="发声数"><a href="#发声数" class="headerlink" title="发声数"></a>发声数</h3><p>Sylenth1是一台Polyphony合成器（多音合成器） </p>
+<p>左上角的Polyphony数值控制着midi键盘同时按下的键位数</p>
+<p><img src="https://cdn.jsdelivr.net/gh/amzsowhat/image/img/blog_12021-05-27_213636.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/amzsowhat/image/img/blog_12021-05-27_213636.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="></p>
+<p>右侧的Voices数代表着最大发声数，分子为实时发声数，分母为期望发声数。分母由osclllator面板上Voices数乘以Polyphony数值得出，最大数值为512。</p>
+<h3 id="Pitch"><a href="#Pitch" class="headerlink" title="Pitch"></a>Pitch</h3><p>osclllator面板上的Pitch由三部分组成：</p>
+<p> <img src="https://cdn.jsdelivr.net/gh/amzsowhat/image/img/blog_12021-05-27_214217.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/amzsowhat/image/img/blog_12021-05-27_214217.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="></p>
+<p>Octave——八度音</p>
+<p>范围（ -3 ，+3）</p>
+<p>Note—— 半音</p>
+<p>范围（-7 ， +7）</p>
+<p>Fine——半音内</p>
+<p>范围（-1 ， +1）</p>
+<p>在调节面板上，仅显示旋钮，不显示具体数值，查看具体数值需要将鼠标停滞于旋钮上，名称与数值会显示在屏幕中央面板处。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/amzsowhat/image/img/blog_12021-05-27_214739.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/amzsowhat/image/img/blog_12021-05-27_214739.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="></p>
+<p>需要进行微调时，按住键盘的Shift键进行调节。</p>
+<h3 id="Volume"><a href="#Volume" class="headerlink" title="Volume"></a>Volume</h3><p>控制声音响度</p>
+<h3 id="Wave"><a href="#Wave" class="headerlink" title="Wave"></a>Wave</h3><p>sylenth1合成器共内置如下种波形：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/amzsowhat/image/img/blog_12021-05-27_215054.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/amzsowhat/image/img/blog_12021-05-27_215054.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="></p>
+<p>其中Noise为全频噪音。</p>
+<h3 id="Detune"><a href="#Detune" class="headerlink" title="Detune"></a>Detune</h3><p>在Voices数目＞1时可用，调节声音的厚度。</p>
+<h3 id="Stereo"><a href="#Stereo" class="headerlink" title="Stereo"></a>Stereo</h3><p>控制立体声道的宽广程度，范围（0 ， 10），0为单声道，10为立体声。</p>
+<h3 id="Pan"><a href="#Pan" class="headerlink" title="Pan"></a>Pan</h3><p>控制由左至右坐标轴上的声像，范围（-10 ， 10），分别对应左右声道。</p>
+
+  
+  
+    
+    <div class='footer'>
       
-        <div>
-          <a class='readmore' href='/2021/05/27/Voice%20&%20OSC%20%E5%A3%B0%E9%9F%B3%E4%B8%8E%E6%8C%AF%E8%8D%A1%E5%99%A8/'>
-            Read More
-          </a>
+      
+      
+        <div class='copyright'>
+          <blockquote>
+            
+              
+                <p>博客内容遵循 署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</p>
+
+              
+            
+              
+                <p>本文永久链接是：<a href=https://amzsowhat.github.io/2021/05/27/Voice%20&%20OSC%20%E5%A3%B0%E9%9F%B3%E4%B8%8E%E6%8C%AF%E8%8D%A1%E5%99%A8/>https://amzsowhat.github.io/2021/05/27/Voice%20&%20OSC%20%E5%A3%B0%E9%9F%B3%E4%B8%8E%E6%8C%AF%E8%8D%A1%E5%99%A8/</a></p>
+              
+            
+          </blockquote>
         </div>
+      
       
     </div>
   
+  
+    
 
+
+  <div class='article-meta' id="bottom">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2021-05-27T21:59:24+08:00">
+  <a class='notlink'>
+    <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：May 27, 2021</p>
+  </a>
 </div>
 
-          </div>
         
       
         
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow">
-  
-  
-  
-  
-    
-    <h2 class="article-title" >
-      <a href="/2021/05/26/Sylenth1%E5%90%88%E6%88%90%E5%99%A8/">
-        May 26, 2021
-      </a>
-    </h2>
-  
-  <div class='md'>
+          
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
     
       
-        Sylenth1合成器一、声音走向​    合成器共包含4个Oscillator（振荡器），Part A/B 各两个。
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://amzsowhat.github.io/2021/05/27/Voice%20&%20OSC%20%E5%A3%B0%E9%9F%B3%E4%B8%8E%E6%8C%AF%E8%8D%A1%E5%99%A8/&title= - ヽ(✿ﾟ▽ﾟ)ノHi 欢迎来到阿童的博客&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://amzsowhat.github.io/2021/05/27/Voice%20&%20OSC%20%E5%A3%B0%E9%9F%B3%E4%B8%8E%E6%8C%AF%E8%8D%A1%E5%99%A8/&title= - ヽ(✿ﾟ▽ﾟ)ノHi 欢迎来到阿童的博客&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://service.weibo.com/share/share.php?url=https://amzsowhat.github.io/2021/05/27/Voice%20&%20OSC%20%E5%A3%B0%E9%9F%B3%E4%B8%8E%E6%8C%AF%E8%8D%A1%E5%99%A8/&title= - ヽ(✿ﾟ▽ﾟ)ノHi 欢迎来到阿童的博客&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=">
+          
+        </a>
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+
+
+        
+      
+    </div>
+  </div>
+
+
+  
+  
+
+  
+    <div class="prev-next">
+      
+      
+        <a class='next' href='/2021/05/26/Sylenth1%E5%90%88%E6%88%90%E5%99%A8/'>
+          <p class='title'><i class="fas fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>Sylenth1合成器一、声音走向​    合成器共包含4个Oscillator（振荡器），Part A/B 各两个。
 ​    采用层级结构如下图：
 
-其中，声音输出前的Master Effects居于效果器中央，共有以下
-Distort——琶音
-Phaser——失真
-Chorus——相位
-EQ
-Delay——延音
-Reverb——混响
-Compress——压缩 
-以及一个midi效果器：...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time>2021-05-26</time>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2021/05/26/Sylenth1%E5%90%88%E6%88%90%E5%99%A8/'>
-            Read More
-          </a>
-        </div>
+其中，声音输出前的Master Effe...</p>
+        </a>
       
     </div>
   
+</article>
 
+
+  
+
+  <article class="post white-box reveal shadow" id="comments">
+    <p ct><i class='fas fa-comments'></i> 评论</p>
+    
+    <div id="valine_container" class="valine_thread">
+  <i class="fas fa-cog fa-spin fa-fw fa-2x"></i>
 </div>
 
-          </div>
-        
-      
-    
-  </section>
-  
-    
-  
+  </article>
 
 
-	
+
+
+
+
 </div>
 <aside class='l_side'>
   
@@ -569,181 +621,28 @@ Compress——压缩
     
     
 
-<section class="widget blogger shadow desktop">
-  <div class='content'>
-    
-      
-        <a class='avatar flat-box circle' href='/about/'>
-          <img no-lazy src='https://cdn.jsdelivr.net/gh/amzsowhat/image/img/myphoto.JPG'/>
-        </a>
-      
-    
-    
-      <div class='text'>
-        
-          <h2>阿童</h2>
-        
-        
-          <p>探索未知</p>
 
-        
-        
-      </div>
-    
-    
-  </div>
-</section>
 
-  
-
-  
+  <section class="widget toc-wrapper shadow desktop mobile" id="toc-div" >
     
-    
-
-  
-
-  
-    
-    
-
-  
-
-  
-
-  
-    
-    
-
-<section class="widget shadow desktop">
-  
   <header>
     
-      <i class="fas fa-award fa-fw" aria-hidden="true"></i><span class='name'>站点信息</span>
+      <i class="fas fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
     
   </header>
 
 
-  <div class='content'>
-    <div class="webinfo">
-      
-        <div class="webinfo-item">
-          <div>文章数目：</div>
-          <div>2 篇</div>
-        </div>
-      
-
-      
-        <div class="webinfo-item">
-          <div>已运行时间：</div>
-          <div id="webinfo-runtime-count" publish_date="03/24/2020 21:34:09"></div>
-        </div>
-        <script>
-          var BirthDay = new Date(new Date('2020/01/01'));
-          var today = new Date();
-          var timeold = (today.getTime() - BirthDay.getTime());
-          var daysold = Math.floor(timeold / (24 * 60 * 60 * 1000));
-          document.getElementById('webinfo-runtime-count').innerHTML = daysold + ' 天';
-        </script>
-      
-
-
-      
-
-      
-        <div class="webinfo-item">
-          <div>本站访客数：</div>
-          
-          <div><span id="lc-uv"><span id='number'><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span></span> 人</div>
-          
-        </div>
-      
-
-      
-        <div class="webinfo-item">
-          <div>本站总访问量：</div>
-          
-          <div><span id="lc-sv"><span id='number'><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span></span> 次</div>
-          
-        </div>
-      
-
-      
-        <div class="webinfo-item">
-          <div>最后活动时间：</div>
-          
-            <div id="last-update" style="display: none;">Thu May 27 2021 22:02:09 GMT+0800 (GMT+08:00)</div>
-            <div id="last-update-show">2021-05-27 日</div>
-          
-        </div>
-        
-        <script>
-          function timeago(dateTimeStamp) {
-              var minute = 1000 * 60; //把分，时，天，周，半个月，一个月用毫秒表示
-              var hour = minute * 60;
-              var day = hour * 24;
-              var week = day * 7;
-              var month = day * 30;
-              var now = new Date().getTime(); //获取当前时间毫秒
-              var diffValue = now - dateTimeStamp; //时间差
-              if (diffValue < 0) {
-                  return;
-              }
-              var minC = diffValue / minute; //计算时间差的分，时，天，周，月
-              var hourC = diffValue / hour;
-              var dayC = diffValue / day;
-              var weekC = diffValue / week;
-              var monthC = diffValue / month;
-              if (monthC >= 1 && monthC <= 3) {
-                  result = " " + parseInt(monthC) + " 月前"
-              } else if (weekC >= 1 && weekC <= 3) {
-                  result = " " + parseInt(weekC) + " 周前"
-              } else if (dayC >= 1 && dayC <= 6) {
-                  result = " " + parseInt(dayC) + " 天前"
-              } else if (hourC >= 1 && hourC <= 23) {
-                  result = " " + parseInt(hourC) + " 小时前"
-              } else if (minC >= 1 && minC <= 59) {
-                  result = " " + parseInt(minC) + " 分钟前"
-              } else if (diffValue >= 0 && diffValue <= minute) {
-                  result = "刚刚"
-              } else {
-                  var datetime = new Date();
-                  datetime.setTime(dateTimeStamp);
-                  var Nyear = datetime.getFullYear();
-                  var Nmonth = datetime.getMonth() + 1 < 10 ? "0" + (datetime.getMonth() + 1) : datetime.getMonth() + 1;
-                  var Ndate = datetime.getDate() < 10 ? "0" + datetime.getDate() : datetime.getDate();
-                  var Nhour = datetime.getHours() < 10 ? "0" + datetime.getHours() : datetime.getHours();
-                  var Nminute = datetime.getMinutes() < 10 ? "0" + datetime.getMinutes() : datetime.getMinutes();
-                  var Nsecond = datetime.getSeconds() < 10 ? "0" + datetime.getSeconds() : datetime.getSeconds();
-                  result = Nyear + "-" + Nmonth + "-" + Ndate
-              }
-              return result;
-          }
-          var lastUpDate = document.getElementById('last-update').innerHTML;
-          try {
-            document.getElementById('last-update-show').innerHTML = timeago(new Date(lastUpDate));
-          } catch (error) {
-            document.getElementById('last-update-show').innerHTML = '2021-05-27 日';
-          }
-        </script>
-        
-      
+    <div class='content'>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#OSC%E5%8F%82%E6%95%B0"><span class="toc-text">OSC参数</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%91%E5%A3%B0%E6%95%B0"><span class="toc-text">发声数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Pitch"><span class="toc-text">Pitch</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Volume"><span class="toc-text">Volume</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Wave"><span class="toc-text">Wave</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Detune"><span class="toc-text">Detune</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Stereo"><span class="toc-text">Stereo</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Pan"><span class="toc-text">Pan</span></a></li></ol></li></ol>
     </div>
-  </div>
-</section>
-
-  
-
-  
-    
-    
-
-
+  </section>
 
 
   
 
 
 </aside>
+
 
 
 		  
