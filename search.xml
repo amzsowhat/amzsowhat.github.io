@@ -5,6 +5,19 @@
     
     <entry>
       <title></title>
+      <link href="2021/05/28/Retrig%20Phrase%20&amp;%20Inv/"/>
+      <url>2021/05/28/Retrig%20Phrase%20&amp;%20Inv/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Retrig-Phrase-amp-Inv"><a href="#Retrig-Phrase-amp-Inv" class="headerlink" title="Retrig Phrase &amp; Inv"></a>Retrig Phrase &amp; Inv</h1><p>位于oscillator部分的以下三个位置</p><p><img src="https://cdn.jsdelivr.net/gh/amzsowhat/image/img/blog_12021-05-28_142759.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/amzsowhat/image/img/blog_12021-05-28_142759.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="></p><p>需要 2+ 个oscillator开启后生效</p><h2 id="Phrase"><a href="#Phrase" class="headerlink" title="Phrase"></a>Phrase</h2><p>更改 wavefrom 的起始点，需要搭配 Retrig 按钮开启使用</p><p>范围（0 ， 360）</p><p><img src="https://cdn.jsdelivr.net/gh/amzsowhat/image/img/blog_12021-05-28_143307.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/amzsowhat/image/img/blog_12021-05-28_143307.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="></p><h2 id="Retrig"><a href="#Retrig" class="headerlink" title="Retrig"></a>Retrig</h2><p>开启后，固定 wavefrom 的起始位置在同一个点。</p><p>如果关闭，则起始位置为随机点，同时 Phrase 设定不生效。</p><h2 id="Inv"><a href="#Inv" class="headerlink" title="Inv"></a>Inv</h2><p>相位翻转，将发声波形水平翻转。</p><p>如果在同一个osc中使用同波形，默认都开启Retrig，一台开启Inv，一台不开启，则声波互相抵消，表现为不发声。</p><p>同理，使用不同波形，则表现为合成波形。</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
       <link href="2021/05/27/Voice%20&amp;%20OSC%20%E5%A3%B0%E9%9F%B3%E4%B8%8E%E6%8C%AF%E8%8D%A1%E5%99%A8/"/>
       <url>2021/05/27/Voice%20&amp;%20OSC%20%E5%A3%B0%E9%9F%B3%E4%B8%8E%E6%8C%AF%E8%8D%A1%E5%99%A8/</url>
       
